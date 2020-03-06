@@ -80,6 +80,7 @@ python train.py --config=$CONFIG --results_dir=$LOGDIR --data_dir=$PREPROCESSED_
 ### Generate images
 ```
 python evaluations/gen_images.py --config=$CONFIG --snapshot=${LOGDIR}/ResNetGenerator_<iterations>.npz --results_dir=${LOGDIR}/gen_images
+python evaluations/gen_images.py --config=configs/sn_projection.yml --snapshot=/home/tem/ResNetGenerator_450000.npz --results_dir=./gen_images  
 ```
 
 ### Generate category morphing images
